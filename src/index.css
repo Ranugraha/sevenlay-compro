@@ -29,6 +29,214 @@ body {
 
 /* text */
 
+.h1-medium-uppercase {
+  color: primary;
+  font-family: Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.88px;
+  text-transform: uppercase;
+}
+.h2-medium-uppercase {
+  color: primary;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+.h2-medium {
+  color: primary;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.H3-regular {
+  color: primary;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.2px;
+  letter-spacing: 0.48px;
+}
+
+.body-2-bold-uppercase {
+  color: primary;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+
+.body-2-regular {
+  color: primary;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.36px;
+}
+
+.body-bold-uppercase {
+  color: primary;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.body-regular-uppercase {
+  color: primary;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.body-medium {
+  color: #000;
+  font-feature-settings:
+    'clig' off,
+    'liga' off;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.body-regular {
+  color: primary;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  letter-spacing: 0.32px;
+}
+
+.body-medium-uppercase {
+  color: primary;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+
+.body-light {
+  color: primary;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.letter-spacing-2percent {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.letter-spacing-5percent {
+  color: primary;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.link-regular-16px {
+  /* color: #000; */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-decoration-line: underline;
+}
+
+.link-light-14px {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-decoration-line: underline;
+}
+
+.mobile-h1-medium-uppercase {
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
 .mobile-h1-medium {
-  @apply text-white text-[32px] not-italic font-medium tracking-[0.64px] uppercase;
+  @apply text-white text-[44px] not-italic font-medium leading-normal tracking-[0.64px] uppercase;
+}
+
+.h2-medium-uppercase {
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+.h2-medium {
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.h3-regular {
+  @apply text-white text-[24px] not-italic font-normal leading-[31.2px]  tracking-[0.48px];
+}
+
+/* button */
+
+.button-primary-dark-normal {
+  @apply w-[170px] h-[39px] bg-white hover:bg-button text-primary hover:text-white text-center text-base not-italic font-medium leading-normal tracking-[0.32px] transition duration-500;
+}
+
+.button-secondary-dark-normal {
+  @apply w-[170px] h-[39px] border-[2px] border-white hover:border-button text-white hover:text-button transition duration-500;
 }

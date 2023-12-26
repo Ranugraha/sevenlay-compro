@@ -13,7 +13,7 @@ export default function Carousel() {
   console.log(curr);
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative  ">
       <div
         className="flex transition-transform ease-out duration-500 h-[750px] relative "
         style={{ transform: `translateX(-${curr * 100}%)` }}
@@ -21,7 +21,7 @@ export default function Carousel() {
         {/* {heroImage.map((j) => ( */}
         <div
           style={{ backgroundImage: `url(${heroImage[0]})` }}
-          className="w-screen bg-center bg-cover drop-shadow-2xl    "
+          className="w-screen bg-center bg-cover drop-shadow-2xl"
         ></div>
         {/* ))} */}
       </div>
@@ -29,33 +29,25 @@ export default function Carousel() {
         {/* <button onClick={prev}>left</button>
         <button onClick={next}>right</button> */}
       </div>
-
-      <div className="flex-col justify-center items-start gap-10 inline-flex absolute inset-0 md:w-[1180px] 2xl:min-w-[1320px] w-[327px] mx-auto">
-        {/* <div className=""> */}
-        <div className="mobile-h1-medium"> Infrastruktur Teknologi</div>
-        <div>
-          Salah satu komponen terpenting infrastruktur teknologi Indonesia, yang
-          memiliki potensi signifikan bagi pengembangan softwere.
-        </div>
-        <div>
-          <button>Bergabung</button>
-          <button>Pelajari Lebih Lanjut</button>
-        </div>
-
-        {/* <div className="">
-          <div className="mobile-h1-medium">Infrastruktur Teknologi</div>
-          <div className="text-white">
+      <div className="flex items-center absolute inset-1 md:w-[1180px] 2xl:min-w-[1320px] md:mx-auto  mx-5">
+        <div className="md:w-[570px] 2xl:min-w-[570px] w-[327px]">
+          {/* <div className=""> */}
+          <div className="mobile-h1-medium"> Infrastruktur Teknologi</div>
+          <div className="h3-regular  mt-7 mb-7">
             Salah satu komponen terpenting infrastruktur teknologi Indonesia,
             yang memiliki potensi signifikan bagi pengembangan softwere.
           </div>
+          <div className="flex">
+            <button className="button-primary-dark-normal body-medium mr-[30px] ">
+              Bergabung
+            </button>
+            <button className="button-secondary-dark-normal body-medium">
+              Pelajari Lebih Lanjut
+            </button>
+          </div>
         </div>
-        <div className="text-white">
-          <button className="">Bergabung</button>
-          <button className="">Pelajari Lebih Lanjut</button>
-        </div> */}
-        {/* </div> */}
       </div>
-      <div className="mt-16 right-0 left-0">
+      <div className="mt-16 right-0 left-0 pb-[100px]">
         <div className="flex items-center justify-center gap-2">
           {heroImage.map((_, i) => (
             <div

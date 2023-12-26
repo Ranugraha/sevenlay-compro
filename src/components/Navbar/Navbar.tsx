@@ -51,7 +51,7 @@ const Navbar = () => {
       className={
         navbar
           ? 'flex items-center h-20 md:h-[113px] w-full justify-center fixed transition-all duration-500 bg-white shadow-lg z-50'
-          : 'flex items-center h-20 md:h-[113px] w-full justify-center fixed transition-all bg-white duration-500 z'
+          : 'flex items-center h-20 md:h-[113px] w-full justify-center fixed transition-all bg-white duration-500 z-50'
       }
     >
       <div className="flex items-center justify-between w-full mx-6 md:mx-6 md:w-[1180px] 2xl:min-w-[1320px]">
