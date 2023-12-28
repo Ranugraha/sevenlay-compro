@@ -29,16 +29,18 @@ export default function Carousel() {
         {/* <button onClick={prev}>left</button>
         <button onClick={next}>right</button> */}
       </div>
-      <div className="flex items-center absolute inset-1 md:w-[1180px] 2xl:min-w-[1320px] md:mx-auto  mx-5">
-        <div className="md:w-[570px] 2xl:min-w-[570px] w-[327px]">
+      <div className="flex items-center absolute inset-1 max-w-full lg:max-w-[1180px] 2xl:min-w-[1320px] xl:mx-auto mx-6 ">
+        <div className="md:w-[570px] 2xl:min-w-[570px] max-w-full">
           {/* <div className=""> */}
-          <div className="mobile-h1-medium"> Infrastruktur Teknologi</div>
-          <div className="h3-regular  mt-7 mb-7">
+          <div className="mobile-h1-medium lg:text-[44px]">
+            Infrastruktur Teknologi
+          </div>
+          <div className="body-2-regular text-white text-justify lg:text-[24px] mt-7 mb-7">
             Salah satu komponen terpenting infrastruktur teknologi Indonesia,
             yang memiliki potensi signifikan bagi pengembangan softwere.
           </div>
-          <div className="flex">
-            <button className="button-primary-dark-normal body-medium mr-[30px] ">
+          <div className="flex flex-wrap">
+            <button className="button-primary-dark-normal body-medium mr-[16px] lg:mr-[30px] mb-4 ">
               Bergabung
             </button>
             <button className="button-secondary-dark-normal body-medium">
@@ -48,7 +50,7 @@ export default function Carousel() {
         </div>
       </div>
       <div className="mt-16 right-0 left-0 pb-[100px]">
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2 ">
           {heroImage.map((_, i) => (
             <div
               className={`

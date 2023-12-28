@@ -29,15 +29,8 @@ body {
 
 /* text */
 
-.h1-medium-uppercase {
-  color: primary;
-  font-family: Roboto;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.88px;
-  text-transform: uppercase;
+.h1mediumuppercase {
+  @apply text-primary text-[44px] not-italic font-medium leading-normal tracking-[0.8] uppercase;
 }
 .h2-medium-uppercase {
   color: primary;
@@ -81,8 +74,6 @@ body {
 }
 
 .body-2-regular {
-  color: primary;
-  font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -206,7 +197,7 @@ body {
 }
 
 .mobile-h1-medium {
-  @apply text-white text-[44px] not-italic font-medium leading-normal tracking-[0.64px] uppercase;
+  @apply text-white text-[32px] not-italic font-medium leading-normal tracking-[0.64px] uppercase;
 }
 
 .h2-medium-uppercase {
