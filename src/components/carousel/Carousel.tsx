@@ -2,25 +2,27 @@ import React, { useState } from 'react';
 import { hero1, hero2, hero3, logo1 } from '../../assets/images';
 
 export default function Carousel() {
-  const heroImage = [hero1, hero2, hero3];
+  // const heroImage = [hero1, hero2, hero3];
 
   //   const [currnetIndex, setCurrnetIndex] = useState(1);
+
   const [curr, setCurr] = useState(0);
-  const prev = () =>
-    setCurr((curr) => (curr === 0 ? heroImage.length - 1 : curr - 1));
-  const next = () =>
-    setCurr((curr) => (curr === heroImage.length - 1 ? 0 : curr + 1));
-  console.log(curr);
+  // const prev = () =>
+  //   setCurr((curr) => (curr === 0 ? heroImage.length - 1 : curr - 1));
+  // const next = () =>
+  //   setCurr((curr) => (curr === heroImage.length - 1 ? 0 : curr + 1));
+  // console.log(curr);
 
   return (
-    <div className="overflow-hidden relative  ">
+    <div className="overflow-hidden relative mb-[100px]">
       <div
         className="flex transition-transform ease-out duration-500 h-[750px] relative "
-        style={{ transform: `translateX(-${curr * 100}%)` }}
+        // style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {/* {heroImage.map((j) => ( */}
         <div
-          style={{ backgroundImage: `url(${heroImage[0]})` }}
+          // style={{ backgroundImage: `url(${heroImage[0]})` }}
+          style={{ backgroundImage: `url(${hero1})` }}
           className="w-screen bg-center bg-cover drop-shadow-2xl"
         ></div>
         {/* ))} */}
@@ -49,16 +51,16 @@ export default function Carousel() {
           </div>
         </div>
       </div>
-      <div className="mt-16 right-0 left-0 pb-[100px]">
+      <div className="mt-16 right-0 left-0 mb-[100px]">
         <div className="flex items-center justify-center gap-2 ">
-          {heroImage.map((_, i) => (
+          {/* {heroImage.map((_, i) => (
             <div
               className={`
               transition-all w-[10px] h-[10px] bg-button 
               ${curr === i ? 'p-2' : 'bg-secondary'}
             `}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

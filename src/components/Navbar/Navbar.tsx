@@ -67,7 +67,7 @@ const Navbar = () => {
                 // navbar
                 //   ? "text-white text-sm font-medium font-['Roboto'] uppercase tracking-tight mx-4  hover:text-button transition duration-300"
                 //   :
-                "text-primary text-sm font-medium font-['Roboto'] uppercase tracking-tight mx-4  hover:text-button transition duration-300"
+                "text-primary text-sm font-medium font-['Roboto'] uppercase tracking-tight mx-4  hover:text-button transition duration-500"
               }
             >
               {listItem.name}
