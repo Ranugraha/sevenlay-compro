@@ -11,26 +11,25 @@ import Carousel from '../../components/carousel/Carousel';
 const Home = () => {
   return (
     <div>
-      <section className="h-[733px] w-full flex items-center relative">
+      <section className="h-[733px] w-full flex items-center ">
         <Carousel />
       </section>
 
       {/* ======================== start section =================================== */}
       <section
         id="about-us"
-        className="h-[572px]  flex items-center relative mx-auto w-full 2xl:max-w-[1320px] 2xl:mx-auto"
+        className=" flex-col lg:flex-row h-[572px] flex items-center relative xl:mx-auto  xl:max-w-[1180px] 2xl:max-w-[1320px] 2xl:mx-auto "
       >
         {/* left */}
-        <div className=" flex flex-col justify-center ">
-          {/* <div className="bg-primary h-[452px] w-[894px] absolute" /> */}
-          <div className="bg-primary h-[452px] w-[894px] absolute -translate-x-1/2 "></div>
-          <div className="bg-primary h-[452px] w-[894px] flex items-center">
-            <div className="absolute 2xl:mx-0 mx-[135px] w-[570px] h-auto flex flex-col justify-between">
-              <div className="text-white w-auto justify-between h-[151px]  ">
+        <div className="flex flex-col justify-center w-full ">
+          <div className="bg-primary h-[452px] w-full lg:w-[894px] absolute translate-y-24 md:translate-y-1/3 lg:translate-y-0 lg:-translate-x-1/2 "></div>
+          <div className="bg-primary h-[452px] lg:w-[894px] flex items-center">
+            <div className=" absolute 2xl:mx-0 mx-6 xl:mx-0 lg:w-[570px] h-auto flex flex-col justify-between">
+              <div className="text-white w-auto justify-between h-[151px] mb-[24px] lg:mb-[34px]">
                 <h1 className="h2-medium-uppercase pb-[40px]">
                   Dewan Teknologi
                 </h1>
-                <p className="body-2-regular">
+                <p className="body-2-regular  ">
                   Kami berkontribusi pada penciptaan sistem softwere yang
                   efisie, pemberantasan korupsi dan pemulihan Teknologi
                 </p>
@@ -54,27 +53,31 @@ const Home = () => {
           </div>
         </div>
         {/* right */}
-        <div className="absolute right-0 top-0 2xl:mx-0 mx-[135px]">
-          <div className=" grid gap-[30px] grid-cols-2 w-[570px] ">
+        <div className=" relative z-20 lg:absolute right-0 top-0 2xl:mx-0 lg:mx-[0px] mx-6">
+          <div className="grid gap-[30px] grid-cols-2 lg:-w-[570px] ">
             <div
               style={{ backgroundImage: `url(${hero1})` }}
-              className="w-[270px] h-[270px]"
+              className="w-[155px] h-[155px] md:w-[270px] md:h-[270px]"
             ></div>
             <div
               style={{ backgroundImage: `url(${hero1})` }}
-              className="w-[270px] h-[270px]"
+              className="w-[155px] h-[155px] md:w-[270px] md:h-[270px]"
             ></div>
             <div
               style={{ backgroundImage: `url(${hero1})` }}
-              className="w-[270px] h-[270px]"
+              className="w-[155px] h-[155px] md:w-[270px] md:h-[270px]"
             ></div>
             <div
               style={{ backgroundImage: `url(${hero1})` }}
-              className="w-[270px] h-[270px]"
+              className="w-[155px] h-[155px] md:w-[270px] md:h-[270px]"
             ></div>
           </div>
         </div>
       </section>
+      {/* ======================== end section =================================== */}
+
+      {/* ======================== start section =================================== */}
+      <section id="action"></section>
     </div>
   );
 };

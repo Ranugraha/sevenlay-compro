@@ -61,6 +61,9 @@ export default function Carousel() {
             `}
             />
           ))} */}
+          <div className="transition-all w-[10px] h-[10px] bg-button "></div>
+          <div className="transition-all w-[10px] h-[10px] bg-button "></div>
+          <div className="transition-all w-[10px] h-[10px] bg-button "></div>
         </div>
       </div>
     </div>
