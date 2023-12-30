@@ -77,12 +77,33 @@ body {
   text-transform: uppercase;
 }
 
+.body-2-light {
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
 .body-2-regular {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 23.4px */
   letter-spacing: 0.36px;
+}
+
+.link-light-14px {
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-decoration-line: underline;
 }
 
 .body-bold-uppercase {

@@ -4,5 +4,6 @@ import hero3 from './luca-bravo-zAjdgNXsMeg-unsplash.jpg';
 import logo1 from './logo2.jpeg';
 import facebookicon from './facebook.png';
 import youtubeicon from './youtube.png';
+import bgroad from './BG_road.png';
 
-export { hero1, hero2, hero3, logo1, facebookicon, youtubeicon };
+export { hero1, hero2, hero3, logo1, facebookicon, youtubeicon, bgroad };

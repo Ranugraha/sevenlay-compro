@@ -18,13 +18,13 @@ const Home = () => {
       {/* ======================== start section =================================== */}
       <section
         id="about-us"
-        className=" flex-col lg:flex-row h-[572px] flex items-center relative xl:mx-auto  xl:max-w-[1180px] 2xl:max-w-[1320px] 2xl:mx-auto "
+        className=" flex-col lg:flex-row lg:h-[572px] flex items-center relative xl:mx-auto xl:max-w-[1180px] 2xl:max-w-[1320px] 2xl:mx-auto lg:mb-[100px] "
       >
         {/* left */}
-        <div className="flex flex-col justify-center w-full ">
-          <div className="bg-primary h-[452px] w-full lg:w-[894px] absolute translate-y-24 md:translate-y-1/3 lg:translate-y-0 lg:-translate-x-1/2 "></div>
-          <div className="bg-primary h-[452px] lg:w-[894px] flex items-center">
-            <div className=" absolute 2xl:mx-0 mx-6 xl:mx-0 lg:w-[570px] h-auto flex flex-col justify-between">
+        <div className="flex flex-col justify-center w-full">
+          <div className="bg-primary  lg:h-[452px] lg:w-[894px] lg:absolute translate-y-24 lg:translate-y-0 lg:-translate-x-1/2 "></div>
+          <div className="bg-primary  h-[452px] lg:w-[894px] flex items-center">
+            <div className="absolute 2xl:mx-0 mx-6 xl:mx-0 lg:w-[570px] h-auto flex flex-col justify-between">
               <div className="text-white w-auto justify-between h-[151px] mb-[24px] lg:mb-[34px]">
                 <h1 className="h2-medium-uppercase pb-[40px]">
                   Dewan Teknologi
@@ -51,9 +51,10 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <span className="h-[78px] lg:h-0 w-full lg:w-0 bg-primary -translate-y-1 "></span>
         </div>
         {/* right */}
-        <div className=" relative z-20 lg:absolute right-0 top-0 2xl:mx-0 lg:mx-[0px] mx-6">
+        <div className="relative z-20 lg:absolute right-0 top-0 2xl:mx-0 xl:mx-[0px] mx-6 -translate-y-1/4 md:-translate-y-24 lg:-translate-y-0">
           <div className="grid gap-[30px] grid-cols-2 lg:-w-[570px] ">
             <div
               style={{ backgroundImage: `url(${hero1})` }}
@@ -77,7 +78,10 @@ const Home = () => {
       {/* ======================== end section =================================== */}
 
       {/* ======================== start section =================================== */}
-      <section id="action"></section>
+      <section
+        id="action"
+        className="container responsivcoloring h-auto"
+      ></section>
     </div>
   );
 };
