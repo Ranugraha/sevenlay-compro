@@ -1,5 +1,5 @@
 import React from 'react';
-import { facebookicon, logo1, youtubeicon } from '../../assets/images';
+import { facebookicon, hero1, logo1, youtubeicon } from '../../assets/images';
 
 const Footer = () => {
   return (
@@ -10,11 +10,12 @@ const Footer = () => {
           src={logo1}
           alt=""
         />
+
         <div className="mb-[60px] md:mb-0">
           <p className="body-bold-uppercase text-white mb-[28px]">
             list Menu :
           </p>
-          <ul className="text-white space-y-[20px] ">
+          <ul className="text-white space-y-[20px]">
             <li className="body-regular-uppercase">Home</li>
             <li className="body-regular-uppercase">About Us</li>
             <li className="body-regular-uppercase">Services</li>
@@ -23,10 +24,12 @@ const Footer = () => {
         <div className="text-white">
           <p className="body-bold-uppercase mb-[24px]">Kontak Kami</p>
           <div className="space-y-[20px] mb-[60px]">
-            <div className="link-regular-16px text-button">
+            <div className="link-regular-16px text-secondary cursor-pointer hover:text-button">
               awan72.ra@gmail.com
             </div>
-            <div className="link-regular-16px text-button">+6282116443390</div>
+            <div className="link-regular-16px text-secondary cursor-pointer hover:text-button">
+              +6282116443390
+            </div>
           </div>
           <p className="body-bold-uppercase mb-[24px]">Social Media Kami</p>
           <div className="flex space-x-[16px]">

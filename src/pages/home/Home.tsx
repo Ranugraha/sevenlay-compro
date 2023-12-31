@@ -56,22 +56,35 @@ const Home = () => {
         {/* right */}
         <div className="relative z-20 lg:absolute right-0 top-0 2xl:mx-0 xl:mx-[0px] mx-6 -translate-y-1/4 md:-translate-y-24 lg:-translate-y-0">
           <div className="grid gap-[30px] grid-cols-2 lg:-w-[570px] ">
-            <div
+            <div className="aspect-h-1 aspect-w-1 overflow-hidden  bg-gray-200 lg:aspect-none group-hover:opacity-75 w-[155px] h-[155px] sm:w-[270px] sm:h-[270px]">
+              <img
+                src={hero1}
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div className="aspect-h-1 aspect-w-1 overflow-hidden  bg-gray-200 lg:aspect-none group-hover:opacity-75 w-[155px] h-[155px] sm:w-[270px] sm:h-[270px]">
+              <img
+                src={hero1}
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div className="aspect-h-1 aspect-w-1 overflow-hidden  bg-gray-200 lg:aspect-none group-hover:opacity-75 w-[155px] h-[155px] sm:w-[270px] sm:h-[270px]">
+              <img
+                src={hero1}
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+            <div className="aspect-h-1 aspect-w-1 overflow-hidden  bg-gray-200 lg:aspect-none group-hover:opacity-75 w-[155px] h-[155px] sm:w-[270px] sm:h-[270px]">
+              <img
+                src={hero1}
+                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+              />
+            </div>
+
+            {/* <div
               style={{ backgroundImage: `url(${hero1})` }}
               className="w-[155px] h-[155px] md:w-[270px] md:h-[270px]"
-            ></div>
-            <div
-              style={{ backgroundImage: `url(${hero1})` }}
-              className="w-[155px] h-[155px] md:w-[270px] md:h-[270px]"
-            ></div>
-            <div
-              style={{ backgroundImage: `url(${hero1})` }}
-              className="w-[155px] h-[155px] md:w-[270px] md:h-[270px]"
-            ></div>
-            <div
-              style={{ backgroundImage: `url(${hero1})` }}
-              className="w-[155px] h-[155px] md:w-[270px] md:h-[270px]"
-            ></div>
+            ></div> */}
           </div>
         </div>
       </section>
