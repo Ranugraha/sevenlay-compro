@@ -21,18 +21,22 @@ export default function Carousel({
   }, []);
 
   return (
-    <div className="">
+    <div className="bg-slate-400 w-full">
       {/* <div
         className="flex transition-transform ease-out duration-500 h-[750px] relative "
         style={{ transform: `translateX(-${curr * 100}%)` }}
       > */}
-      <div className="overflow-hidden relative h-[750px]">
+      <div className="overflow-hidden relative h-[750px] w-auto bg-slate-900 ">
         <div
-          className="flex transition-transform ease-out duration-500"
+          className="flex transition-transform ease-out duration-500 "
           style={{ transform: `translateX(-${curr * 100}%)` }}
         >
           {heroImage.map((j) => (
-            <img src={j} alt="" className="h-full w-full" />
+            <img
+              src={j}
+              alt=""
+              className="h-full w-full object-fill object-center lg:h-full lg:w-full"
+            />
           ))}
         </div>
       </div>

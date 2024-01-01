@@ -1,4 +1,4 @@
-import { facebookicon, hero1, youtubeicon } from '../../assets/images';
+import { bgroad, facebookicon, hero1, youtubeicon } from '../../assets/images';
 import {
   ButtonPrimaryDarkNormal,
   ButtonPrimaryLightNormal,
@@ -93,8 +93,22 @@ const Home = () => {
       {/* ======================== start section =================================== */}
       <section
         id="action"
-        className="container responsivcoloring h-auto"
-      ></section>
+        className="responsivecoloring h-auto w-full relative"
+      >
+        <img
+          src={bgroad}
+          alt=""
+          className="object-cover h-[265px] lg:h-[153px] w-full "
+        />
+        <div className="absolute z-10 top-0  w-full h-full  ">
+          <div className="mx-6 flex flex-col lg:flex-row justify-around lg:justify-between items-center h-full xl:mx-auto md:max-w-[1180px] 2xl:max-w-[1320px]">
+            <p className="h2-medium text-white">
+              Apakah organisasi Anda ingin menjadi anggota kami?
+            </p>
+            <ButtonPrimaryLightNormal buttontext="Bergabung" />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
